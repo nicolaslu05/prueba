@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Desarrollo Web</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Blog de Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Descubre lo último en tecnologías web</h2>
+            <p>Explora artículos y tendencias sobre HTML, CSS y JavaScript.</p>
+            <button id="mostrarArticulos">Ver artículos</button>
+        </article>
+
+        <!-- Sección de artículos oculta por defecto -->
+        <section id="articulos" class="articulos oculto">
+            <article>
+                <img src="IMG/html.png" alt="HTML">
+                <h2>Introducción a HTML</h2>
+                <p>HTML es el lenguaje base de la web.</p>
+                <button onclick="toggleArticulo(1)">Leer más</button>
+                <p class="contenido-articulo" id="articulo1">HTML usa etiquetas para estructurar el contenido...</p>
+            </article>
+
+            <article>
+                <img src="IMG/css.png" alt="CSS">
+                <h2>CSS: Diseña tu Web</h2>
+                <p>CSS mejora la apariencia de tu sitio.</p>
+                <button onclick="toggleArticulo(2)">Leer más</button>
+                <p class="contenido-articulo" id="articulo2">CSS permite personalizar fuentes, colores, márgenes...</p>
+            </article>
+
+            <article>
+                <img src="IMG/java.png" alt="JavaScript">
+                <h2>JavaScript Interactivo</h2>
+                <p>JS añade dinamismo a tu web.</p>
+                <button onclick="toggleArticulo(3)">Leer más</button>
+                <p class="contenido-articulo" id="articulo3">Con JS puedes programar eventos, animaciones...</p>
+            </article>
+        </section>
+    </main>
+    <footer style="font-size: 20px;  text-align: center; padding: 50px; background-color: #333; color: white; position: absolute; bottom: 0; width: 100%;">
+        Creado por Nicolás Luna 133637
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
